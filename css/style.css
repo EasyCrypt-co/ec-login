@@ -1,0 +1,890 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bodybg {
+    margin: 0px;
+    background: -webkit-radial-gradient(circle, #6eaed9, #0e6fae, #0765a2); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(circle, #6eaed9, #0e6fae, #0765a2); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle, #6eaed9, #0e6fae, #0765a2); /* For Fx 3.6 to 15 */
+    background: radial-gradient(circle, #6eaed9, #0e6fae, #0765a2); /* Standard syntax (must be last) */
+}
+
+.form-logo img {
+    display: block;
+    margin: 0 auto;
+    width: 186px;
+}
+
+.webmail-sec {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 17px 0 0;
+    position: relative
+}
+
+.webmail-sec > img {
+    display: block;
+    margin: 0 auto;
+}
+
+.webmail-sec p {
+    margin: 12px 0 22px;
+}
+
+.textfield-sec {
+    margin: 10px 0 0;
+    overflow: hidden;
+}
+
+.textfield-sec input {
+    padding: 9px 23px;
+    background: #fff;
+    margin-bottom: 17px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #d7d9dc;
+}
+
+.textfield-sec input::-moz-placeholder {
+    color: #a09f9f;
+    opacity: 1;
+}
+
+.textfield-sec input::-webkit-input-placeholder {
+    color: #a09f9f;
+}
+
+.signup-loginsec {
+    overflow: hidden;
+}
+
+.signup-sec {
+    overflow: hidden;
+    text-align: center;
+    float: right;
+}
+
+.signuplink a {
+    float: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #e5f0f8;
+    font-weight: 500;
+    margin: 9px 0 0 0;
+}
+
+.closebtn {
+    position: absolute;
+    right: 9px;
+    top: 8px;
+}
+
+.signuplink a:hover {
+    color: #fff;
+}
+
+.login-btn {
+    box-shadow: 0 1px 1px 0 #587f9a;
+    float: right;
+    margin: 0 1px 1px;
+    font-size: 13px;
+    color: #fff;
+    background: #57b031;
+    padding: 10px 25px;
+    font-weight: 400;
+    border: none;
+}
+
+.login-btn:hover {
+    background: #44a31b;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background: #44a31b;
+    cursor: pointer;
+}
+
+.login-btn:disabled {
+    background: #939393 !important;
+    cursor: pointer !important;
+}
+
+.signup-btn:disabled {
+    background: #939393 !important;
+    cursor: pointer !important;
+}
+
+.signup-btn {
+    box-shadow: 0 1px 1px 0 #587f9a;
+    margin: 0 1px 1px;
+    font-size: 13px;
+    color: #fff;
+    background: #57b031;
+    padding: 10px 25px;
+    font-weight: 400;
+    border: none;
+}
+
+.signup-btn:hover {
+    background: #44a31b;
+    cursor: pointer;
+}
+
+.close-btn {
+    box-shadow: 0 1px 1px 0 #587f9a;
+    margin: 0 1px 1px;
+    font-size: 13px;
+    color: #fff;
+    background: #57b031;
+    padding: 10px 25px;
+    font-weight: 400;
+    border: none;
+}
+
+close-btn:hover {
+    background: #44a31b;
+    cursor: pointer;
+}
+
+.form-menu ul {
+    text-align: center;
+}
+
+.form-menu li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+    border-right: 2px solid #fff;
+    margin-right: 46px;
+    padding-right: 46px;
+    line-height: 18px;
+}
+
+.form-menu li a {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.form-menu li:last-child {
+    border: none;
+    margin: 0;
+}
+
+.form-menu li a:hover {
+    color: rgb(229, 240, 248)
+}
+
+/* .form-menu {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+} */
+.relative-container {
+    position: relative;
+    min-height: calc(100vh - 75px);
+}
+
+.form-container {
+    background: #5fa2d0;
+    border: 3px solid #82b7dc;
+    width: 300px;
+    padding: 38px 59px 71px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px 0 rgb(68, 68, 68);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.unsupported-browser {
+  background: #ff0000;
+  padding: 3px;
+  margin: 5px 0 20px;
+  color: #ffffff;
+  font-size: 17px;
+  text-align: center;
+}
+
+.unsupported-browser p {
+  margin: 0;
+}
+.hide-element {
+      display: none;
+}
+
+#hash {
+    color: #a0a0a0;
+    text-align: center;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    position: fixed;
+}
+
+/*Account page css start here*/
+.account-container {
+    width: 710px;
+    margin: 100px auto;
+    background: #deeff9;
+    border: 7px solid #6aa8d1;
+    padding: 51px 0px 0px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px 0 rgb(68, 68, 68);
+    position: relative;
+}
+
+.account-container .webmail-sec p {
+    margin: 4px 0 20px;
+    color: #0064a2;
+    font-size: 22px;
+    font-weight: 700
+}
+
+.step-row {
+    overflow: hidden;
+}
+
+.step-left {
+    float: left;
+    background: #0064a2;
+    position: relative;
+}
+
+.step-left:after {
+    position: absolute;
+    content: "";
+    height: 57px;
+    width: 50px;
+    background: url('../images/colorimg.png') no-repeat;
+    right: -29px;
+    top: 0px;
+}
+
+.step-left h3 {
+    color: #fff;
+    font-size: 24px;
+    padding: 15px 55px 14px 87px;
+    margin: 0px;
+}
+
+.step-right span {
+    color: #555555;
+    display: inline-block;
+    font-size: 15px;
+    padding: 21px 12px 19px 44px;
+}
+
+.step-right {
+    background: #d5e3f2;
+}
+
+.step1 {
+    padding: 45px 80px;
+}
+
+.step1 P {
+    margin: 0 0 17px;
+}
+
+.password-feild label {
+    float: left;
+    width: 180px;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.password-feild {
+    margin-bottom: 17px;
+    overflow: hidden;
+}
+
+.enterldigits input {
+    padding: 10px;
+    width: 170px;
+    border: 1px solid #d7d9dc;
+}
+
+.enterldigits > span {
+    float: right;
+    font-size: 13px;
+    margin: 9px 0 0 17px;
+}
+
+.enterldigits {
+    float: left;
+}
+
+.enterbtn {
+    float: right;
+}
+
+.enterbtn a {
+    font-size: 15px;
+    color: #fff;
+    background: #57b031;
+    padding: 8px 35px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    margin: 0px 0 0 17px;
+}
+
+.enterbtn a:hover {
+    background: rgb(68, 163, 27)
+}
+
+.step2 {
+    padding: 30px 80px;
+}
+
+.step2 .webmail-sec P {
+    color: #da4c40;
+    margin: 5px 0 6px;
+}
+
+.step2-para p {
+    text-align: center;
+    color: #38393a;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 25px;
+}
+
+.step2 .enterbtn a {
+    display: inline-block;
+    margin: 0;
+}
+
+.step2 .enterbtn {
+    float: none;
+    text-align: center;
+}
+
+.manual-link a {
+    text-align: center;
+    text-decoration: underline;
+    color: #75787b;
+    font-size: 14px;
+    display: block;
+    padding: 20px 0 0;
+}
+
+.manual-link a :hover {
+    background: rgb(68, 163, 27)
+}
+
+.step3 {
+    padding: 30px 66px;
+}
+
+.server-sec {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.server-left {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.server-sec label {
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+.server-left > input {
+    border: 1px solid rgb(215, 217, 220);
+    padding: 10px;
+}
+
+.server-left > label {
+    float: left;
+    width: 160px;
+}
+
+.server-right {
+    float: left;
+}
+
+.port-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.port-right select {
+    height: 38px;
+    width: 50px;
+}
+
+.port-left > input {
+    border: 1px solid rgb(215, 217, 220);
+    padding: 10px 5px;
+    width: 90px;
+}
+
+.port-right {
+    float: left;
+}
+
+.usrnamesec label {
+    width: 100px;
+}
+
+.server-left.usrnamesec > input {
+    width: 206px;
+}
+
+.server-left.usrnamesec {
+    margin-bottom: 25px;
+    margin-right: 0;
+}
+
+.userpass-left {
+    overflow: hidden;
+}
+
+.stepbtn3.enterbtn {
+    float: right;
+}
+
+.stepbtn3.enterbtn a {
+    padding: 8px 11px;
+}
+
+.step3 .step2-para p {
+    text-align: left;
+    margin: 0 0 15px;
+}
+
+.step-row {
+    margin-bottom: 2px;
+}
+
+.step-row3 {
+    margin-bottom: 2px;
+}
+
+.step-row2 {
+    margin-bottom: 2px;
+}
+
+.step2 {
+    display: none
+}
+
+.step3 {
+    display: none
+}
+
+.bluebg {
+    background: #2f87c3;
+}
+
+.right-click {
+    position: absolute;
+    left: 34px;
+    z-index: 99999999;
+    bottom: -53px;
+}
+
+.step-left > img {
+    left: 34px;
+    position: absolute;
+    top: -10px;
+    z-index: 2147483647;
+}
+
+footer.fixfooter {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.error-msg label {
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+}
+
+.error-msg {
+    background: #ff0000;
+    padding: 3px;
+    margin: 5px 0 0
+}
+
+.green-msg label {
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    line-height: 20px;
+}
+
+.green-msg {
+    background: rgb(87, 176, 49);
+    padding: 3px;
+    margin: 5px 0 0
+}
+
+.logo-spac {
+    padding: 40px 60px 0;
+}
+
+.error-page .form-container {
+    padding: 0px;
+    width: 425px;
+}
+
+.form-spac2 {
+    padding: 0 60px 70px;
+}
+
+@media screen and (max-width: 1024px) {
+    .form-container {
+        margin: 0 auto;
+        width: 300px;
+        padding: 45px;
+    }
+
+    .account-container {
+        margin: 100px auto 200px;
+        width: 700px;
+        padding: 45 0px;
+    }
+
+    .account-container .step3 {
+        padding: 30px 60px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .form-container {
+        margin: 150px auto 180px;
+        width: 300px;
+    }
+
+    .account-container {
+        margin: 30px auto 80px;
+        width: 80%;
+        padding: 45 0px;
+    }
+
+    .step-left h3 {
+        padding: 11px 65px 12px 100px;
+    }
+
+    .step-right span {
+        padding: 17px 12px 16px 22px;
+    }
+
+    .step1 {
+        padding: 30px 20px;
+    }
+
+    .enterldigits input {
+        width: 90%
+    }
+
+    .enterldigits {
+        float: none
+    }
+
+    .enterldigits > span {
+        margin: 5px 0 0;
+        float: left;
+    }
+
+    .enterbtn {
+        float: left;
+    }
+
+    .enterbtn a {
+        margin: 20px 0 0 0
+    }
+
+    .step2 {
+        padding: 30px 20px;
+    }
+
+    .enterbtn a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .account-container .step3 {
+        padding: 30px 20px;
+    }
+
+    .server-left > input {
+        width: 90%;
+    }
+
+    .server-right {
+        margin: 15px 0 0;
+    }
+
+    .port-left {
+        width: 74%;
+    }
+
+    .port-left > input {
+        width: 70%;
+    }
+
+    .server-left {
+        margin: 0px;
+    }
+
+    .server-left.usrnamesec {
+        margin-bottom: 15px;
+    }
+
+    .server-right {
+        width: 100%;
+    }
+
+    .stepbtn3.enterbtn a {
+        padding: 8px 30px;
+    }
+
+    .stepbtn3.enterbtn {
+        float: left;
+    }
+
+    .step2 {
+        padding: 20px;
+    }
+
+    .server-left.usrnamesec > input {
+        width: 90%;
+    }
+
+    .server-left.usrnamesec {
+        width: 100%;
+    }
+
+    .server-left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .form-container {
+        margin: 20px auto 20px;
+        padding: 35px;
+        width: 220px;
+    }
+
+    .form-menu ul {
+        padding: 0px;
+    }
+
+    .login-btn a {
+        padding: 6px 20px;
+        font-size: 12px;
+    }
+
+    .form-menu li a {
+        font-size: 12px;
+    }
+
+    .form-menu li {
+        line-height: 12px;
+        margin-right: 0;
+        padding: 0 10px;
+    }
+
+    .account-container {
+        margin: 30px auto 50px;
+        padding: 35px 0;
+        width: 86%;
+    }
+
+    .step-left h3 {
+        padding: 11px 65px 12px 100px;
+    }
+
+    .step-right span {
+        padding: 17px 12px 16px 22px;
+    }
+
+    .step1 {
+        padding: 30px 20px;
+    }
+
+    .enterldigits input {
+        width: 90%
+    }
+
+    .enterldigits {
+        float: none
+    }
+
+    .enterldigits > span {
+        margin: 5px 0 0;
+        float: left;
+    }
+
+    .enterbtn {
+        float: left;
+    }
+
+    .enterbtn a {
+        margin: 20px 0 0 0
+    }
+
+    .step2 {
+        padding: 30px 20px;
+    }
+
+    .enterbtn a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .account-container .step3 {
+        padding: 30px 20px;
+    }
+
+    .server-left > input {
+        width: 90%;
+    }
+
+    .server-right {
+        margin: 15px 0 0;
+    }
+
+    .port-left {
+        width: 74%;
+    }
+
+    .port-left > input {
+        width: 70%;
+    }
+
+    .server-left {
+        margin: 0px;
+    }
+
+    .server-left.usrnamesec {
+        margin-bottom: 15px;
+    }
+
+    .server-right {
+        width: 100%;
+    }
+
+    .stepbtn3.enterbtn a {
+        padding: 8px 30px;
+    }
+
+    .stepbtn3.enterbtn {
+        float: left;
+    }
+
+    .step2 {
+        padding: 20px;
+    }
+
+    .step-left h3 {
+        padding: 11px 39px 12px 60px;
+    }
+
+    .step-right span {
+        height: 30px;
+        line-height: 13px;
+        padding: 16px 8px 10px 11px;
+        text-align: center;
+        width: 235px;
+    }
+
+    .server-left.usrnamesec > input {
+        width: 90%;
+    }
+
+    .server-left.usrnamesec {
+        width: 100%;
+    }
+
+    .server-left {
+        width: 100%;
+    }
+
+    .right-click {
+        bottom: -42px;
+        left: 15px;
+    }
+
+    .form-menu ul {
+        margin-top: 40px;
+    }
+
+    .logo-spac {
+        padding: 30px 30px 0;
+    }
+
+    .form-spac2 {
+        padding: 0 30px 40px;
+    }
+
+    .error-page .form-container {
+        padding: 0;
+        width: 280px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .step-right span {
+        height: 30px;
+        line-height: 13px;
+        padding: 16px 8px 10px 11px;
+        text-align: center;
+        width: 134px;
+    }
+
+    .step-left h3 {
+        padding: 11px 25px 12px 10px;
+    }
+
+    .account-container .webmail-sec p {
+        font-size: 19px;
+    }
+
+    .port-right {
+        float: right;
+    }
+
+    .right-click {
+        bottom: -35px;
+        width: 9%
+    }
+}
+
+/*** Error *******/
+.no-msg {
+    height: 22px;
+    margin-top: 5px;
+}
+
+#signup_notification {
+    margin-top: 30px;
+}

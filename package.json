@@ -1,0 +1,13 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.23.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "babel": "babel bower_components/jquery/dist/jquery.min.js bower_components/bootstrap/dist/js/bootstrap.min.js bower_components/fetch/fetch.js pkd_client/pkd_conf.js pkd_client/pkd_client.js js/constants.js js/utils.js js/helpers.js js/login.js -o bundle.js"
+  }
+}

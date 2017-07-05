@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="bower_components/bootstrap/dist/css/ajax-loader.css" rel="stylesheet">
+    <title>EasyCrypt Webmail</title>
+
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <!-- Font link -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,400,500,600,700" rel="stylesheet">
+    <!-- Font link end here-->
+
+    <noscript>
+        <style>
+            footer {
+                display: none;
+            }
+        </style>
+        <div class="relative-container error-page">
+            <div class="no-js form-container">
+                <div class="logo-spac">
+                    <div class="form-logo">
+                        <img src="images/form-logo.png"/>
+                    </div>
+                    <div class="webmail-sec">
+                        <p>Secure Webmail</p>
+                    </div>
+                </div>
+                <div class="flash-msg" style="margin-bottom: 30px;">
+                    <div id="nojs_notification" class="error-msg">
+                        <label class="message-label">Please enable JavaScript in your browser</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </noscript>
+</head>
+<body class="bodybg">
+
+<div class="relative-container error-page">
+    <div class="login-form-div form-container">
+        <div class="logo-spac">
+            <div class="form-logo">
+                <img src="images/form-logo.png"/>
+            </div>
+            <div class="webmail-sec">
+                <p>Secure Webmail</p>
+            </div>
+        </div>
+        <div class="flash-msg">
+            <div id="login_notification" class="no-msg"></div>
+        </div>
+
+        <div class="form-spac2">
+            <div id="form" style="display: none;">
+                <form onsubmit="return initiateLoginProcess(event)" action="#">
+                    <div class="textfield-sec">
+                        <input id="login_user" type="email" name="email" placeholder="Email" required/>
+                        <input id="login_pass" type="password" name="pass" placeholder="EasyCrypt password" required/>
+                    </div>
+                    <div class="signup-loginsec">
+                      <div class="signuplink">
+                          <a href="#" onclick="goToSignup()">Sign up</a>
+                      </div>
+                        <button id="login_menu_btn" class="login-btn" type="submit">LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="unsupported-browser hide-element">
+          <p> Sorry, Safari is not supported at this time.<br/> Please access
+            EasyCrypt with another browser.
+          </p>
+        </div>
+    </div>
+</div>
+
+<footer class="fixfooter">
+    <div class="form-menu">
+        <ul>
+            <li><a href="https://easycrypt.co/" target="_blank">EasyCrypt website</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="bundle.js"></script>
+<script src="bower_components/openpgp/dist/openpgp.min.js"></script>
+<script src="bower_components/crypto-js/crypto-js.js"></script>
+<script src="bower_components/js.cookie.js/js.cookie.js"></script>
+
+</body>
+</html>
